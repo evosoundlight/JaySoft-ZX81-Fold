@@ -10,7 +10,7 @@ Copyright (C) 2026 JaySoft project contributors, for contributions they own.
 JaySoft-authored application code, interface code, and Android integration are
 made available under the GNU General Public License, version 2 or (at your
 option) any later version. You may redistribute and/or modify those
-contributions under those terms. A copy of GPL version 2 is in `COPYING`.
+contributions under those terms. A copy of GPL version 2 is in `LICENSE`.
 
 The relevant source files include:
 - `app/src/main/java/com/zx81fold/emulator/MainActivity.java` (JaySoft-specific integration)

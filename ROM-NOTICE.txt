@@ -1,8 +1,20 @@
-Private testing notice
+ZX81 BASIC ROM — Copyright and Licensing
 
-This prototype bundles a ZX81 8K BASIC ROM provided by the user for testing.
-The original Sinclair ROM may require separate redistribution permission.
-Do not publish the source archive or built APK publicly until the ROM rights are established.
+ZX81 Fold includes the original improved 8 KB
+Sinclair ZX81 BASIC ROM.
 
-The ZX84 emulator core (c) Damien Guard, used under its MIT licence.
-See ZX84-LICENSE.txt and the notice embedded in app/src/main/assets/index.html.
+Original ROM copyright: Nine Tiles Networks Ltd.
+
+The ROM is distributed under the GNU General
+Public License, version 2 or later, according
+to the historical Open81 source release.
+
+The corresponding assembly source, licence
+and assembly instructions are included in
+the ROM-SOURCE directory.
+
+ROM SHA-256:
+14ad84f4243efcd41587ff46ab932d11087043e8d455a1ed2a227b9657828dfa
+
+The ZX84 emulator engine is separately credited
+to Damien Guard under the MIT licence.
