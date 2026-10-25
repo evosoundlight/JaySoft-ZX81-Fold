@@ -1,0 +1,40 @@
+plugins { id 'com.android.application' }
+
+// ZX81 Fold 1.0 RC1: Android packaging only. Emulator HTML is frozen at v0.7h.
+android {
+    namespace 'com.zx81fold.emulator'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.zx81fold.emulator'
+        minSdk 26
+        targetSdk 36
+        versionCode 100
+        versionName '1.0-rc1'
+    }
+
+    signingConfigs {
+        release {
+            // Local developer machine or GitHub secrets: NEVER store signing keys in Git.
+            def keyFile = System.getenv('ZX81_KEYSTORE_PATH')
+            if (keyFile) {
+                storeFile file(keyFile)
+                storePassword System.getenv('ZX81_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('ZX81_KEY_ALIAS')
+                keyPassword System.getenv('ZX81_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (System.getenv('ZX81_KEYSTORE_PATH')) {
+                signingConfig signingConfigs.release
+            }
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

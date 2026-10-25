@@ -1,0 +1,8 @@
+Private testing notice
+
+This prototype bundles a ZX81 8K BASIC ROM provided by the user for testing.
+The original Sinclair ROM may require separate redistribution permission.
+Do not publish the source archive or built APK publicly until the ROM rights are established.
+
+The ZX84 emulator core (c) Damien Guard, used under its MIT licence.
+See ZX84-LICENSE.txt and the notice embedded in app/src/main/assets/index.html.
