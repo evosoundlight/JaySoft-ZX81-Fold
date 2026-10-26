@@ -3,3 +3,14 @@
 **/build/
 local.properties
 *.iml
+
+# JaySoft signing keys and private credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*keystore-b64*
+.env
+.env.*
